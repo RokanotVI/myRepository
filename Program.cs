@@ -5,6 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.Linq;
 using System.Data.Linq.Mapping;
+using System.Net;
+using System.Net.Sockets;
 
 namespace ConsoleAppForTheTestTask
 {
