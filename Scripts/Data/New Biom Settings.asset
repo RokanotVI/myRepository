@@ -1,0 +1,485 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: beec0842fdfadc149a06ecbad1191dd7, type: 3}
+  m_Name: New Biom Settings
+  m_EditorClassIdentifier: 
+  autoUpdate: 0
+  temperatureNoiseSettings:
+    scale: 5000
+    octaves: 1
+    persistance: 0.6
+    lacunarity: 2
+    seed: 20
+    offset: {x: -900, y: -700}
+    octaveOffsets:
+    - {x: -65951, y: 37839}
+    maxPossibleHeight: 1
+  humidityNoiseSettings:
+    scale: 5000
+    octaves: 1
+    persistance: 0.6
+    lacunarity: 2
+    seed: 108
+    offset: {x: 0, y: 0}
+    octaveOffsets:
+    - {x: -70365, y: 1307}
+    maxPossibleHeight: 1
+  urbanizationNoiseSettings:
+    scale: 5000
+    octaves: 1
+    persistance: 0.6
+    lacunarity: 2
+    seed: 666
+    offset: {x: 0, y: 0}
+    octaveOffsets:
+    - {x: 32300, y: -53176}
+    maxPossibleHeight: 1
+  riversNoiseSettings:
+    scale: 500
+    octaves: 1
+    persistance: 0.6
+    lacunarity: 2
+    seed: 1337
+    offset: {x: 0, y: 0}
+    octaveOffsets:
+    - {x: -58223, y: -76397}
+    maxPossibleHeight: 1
+  riverWidth: 0.08
+  riverDepth: 8000
+  waterTexture: {fileID: 2800000, guid: e6bf1dc5489774149aec55e7d67dd30b, type: 3}
+  waterTint: {r: 0.4528302, g: 0.43513495, b: 0.31399074, a: 0}
+  waterTintStrenght: 0
+  waterLevel: -2
+  waterBlendInterval: 1
+  waterTextureScale: 10
+  bioms:
+    temperature:
+    - Name: Temperature 1
+      strenght: 0.5
+      humidity:
+      - Name: "\u0412\u043B\u0430\u0436\u043D\u043E\u0441\u0442\u044C 1"
+        strenght: 1
+        urbanization:
+        - Name: "\u0423\u0440\u0431\u0430\u043D\u0438\u0437\u0430\u0446\u0438\u044F
+            1"
+          strenght: 1
+          landmassNoiseSettings:
+            scale: 100
+            octaves: 2
+            persistance: 0.6
+            lacunarity: 2
+            seed: 20
+            offset: {x: 0, y: 0}
+            octaveOffsets:
+            - {x: -65051, y: 37139}
+            - {x: 49556, y: 65403}
+            maxPossibleHeight: 1.6
+          heightMultiplier: 20
+          heightCurve:
+            serializedVersion: 2
+            m_Curve:
+            - serializedVersion: 3
+              time: 0
+              value: 0
+              inSlope: 1
+              outSlope: 1
+              tangentMode: 34
+              weightedMode: 0
+              inWeight: 0
+              outWeight: 0
+            - serializedVersion: 3
+              time: 1
+              value: 1
+              inSlope: 1
+              outSlope: 1
+              tangentMode: 34
+              weightedMode: 0
+              inWeight: 0
+              outWeight: 0
+            m_PreInfinity: 2
+            m_PostInfinity: 2
+            m_RotationOrder: 4
+          material: {fileID: 2100000, guid: 4de7d3c6425b4e0439036329987a8b4b, type: 2}
+          layers:
+          - texture: {fileID: 2800000, guid: 37f90f95afe9f8646a035b51f211f579, type: 3}
+            tint: {r: 0.8627451, g: 0.78431374, b: 0.23529412, a: 0}
+            tintStrenght: 0
+            startHeight: 0
+            blendStrength: 0
+            textureScale: 10
+          - texture: {fileID: 2800000, guid: f0633970ef6bf344b85dd3dcf2be8b77, type: 3}
+            tint: {r: 0.29411766, g: 0.7058824, b: 0.11764706, a: 0}
+            tintStrenght: 0
+            startHeight: 0.1
+            blendStrength: 0.1
+            textureScale: 10
+          biomlayers:
+          - texture: {fileID: 2800000, guid: 8f55b25e9ee003b4089a3d48167a21d3, type: 3}
+            tint: {r: 0.6415094, g: 0.5598077, b: 0.5598077, a: 0}
+            tintStrenght: 0
+            startHeight: 0
+            blendStrength: 0
+            textureScale: 10
+          - texture: {fileID: 2800000, guid: 944e18ec8c6d71e479f24b32ce582446, type: 3}
+            tint: {r: 0.6320754, g: 0.28920433, b: 0.28920433, a: 0}
+            tintStrenght: 0
+            startHeight: 0.485
+            blendStrength: 0.03
+            textureScale: 10
+          - texture: {fileID: 2800000, guid: aa9694043ae2edb4aa321d716f7ad10d, type: 3}
+            tint: {r: 0.6320754, g: 0.28920433, b: 0.28920433, a: 0}
+            tintStrenght: 0
+            startHeight: 0
+            blendStrength: 0
+            textureScale: 10
+          - texture: {fileID: 2800000, guid: e6bf1dc5489774149aec55e7d67dd30b, type: 3}
+            tint: {r: 0.6320754, g: 0.28920433, b: 0.28920433, a: 0}
+            tintStrenght: 0
+            startHeight: 1
+            blendStrength: 0
+            textureScale: 10
+          - texture: {fileID: 2800000, guid: e6bf1dc5489774149aec55e7d67dd30b, type: 3}
+            tint: {r: 0.6320754, g: 0.28920433, b: 0.28920433, a: 0}
+            tintStrenght: 0
+            startHeight: 0
+            blendStrength: 0
+            textureScale: 10
+          - texture: {fileID: 2800000, guid: e6bf1dc5489774149aec55e7d67dd30b, type: 3}
+            tint: {r: 0.6320754, g: 0.28920433, b: 0.28920433, a: 0}
+            tintStrenght: 0
+            startHeight: 1
+            blendStrength: 0
+            textureScale: 10
+          hasMountains: 0
+          mountainsNoiseSettings:
+            scale: 50
+            octaves: 6
+            persistance: 0.6
+            lacunarity: 2
+            seed: 0
+            offset: {x: 0, y: 0}
+            octaveOffsets:
+            - {x: 45248, y: 63465}
+            - {x: 53604, y: 11632}
+            - {x: -58794, y: 11776}
+            - {x: 81205, y: -11565}
+            - {x: 95509, y: -45260}
+            - {x: -41619, y: -6538}
+            maxPossibleHeight: 2.3833601
+          mountainMultiplier: 50
+          mountainCurve:
+            serializedVersion: 2
+            m_Curve:
+            - serializedVersion: 3
+              time: 0
+              value: 0
+              inSlope: 0
+              outSlope: 0
+              tangentMode: 0
+              weightedMode: 0
+              inWeight: 0
+              outWeight: 0
+            - serializedVersion: 3
+              time: 1
+              value: 1
+              inSlope: 2
+              outSlope: 2
+              tangentMode: 0
+              weightedMode: 0
+              inWeight: 0
+              outWeight: 0
+            m_PreInfinity: 2
+            m_PostInfinity: 2
+            m_RotationOrder: 4
+          mountainThreshold: 0.5
+          biomeScalingImmunity: 1
+          mountainMaterial: {fileID: 0}
+          mountainLayers: []
+          hasLakes: 1
+          lakesNoiseSettings:
+            scale: 400
+            octaves: 1
+            persistance: 0.6
+            lacunarity: 3
+            seed: 0
+            offset: {x: 0, y: 0}
+            octaveOffsets:
+            - {x: 45248, y: 63465}
+            maxPossibleHeight: 1
+          lakeMultiplier: 80
+          lakeThreshold: 0.8
+          temperatureStart: 0
+          temperatureInterval: 0.5
+          humidityStart: 0
+          humidityInterval: 1
+          urbanizationStart: 0
+          urbanizationInterval: 1
+          shaderProperties:
+            colorArray:
+            - {r: 0.8627451, g: 0.78431374, b: 0.23529412, a: 0}
+            - {r: 0.29411766, g: 0.7058824, b: 0.11764706, a: 0}
+            - {r: 0.6415094, g: 0.5598077, b: 0.5598077, a: 0}
+            - {r: 0.6320754, g: 0.28920433, b: 0.28920433, a: 0}
+            - {r: 0.6320754, g: 0.28920433, b: 0.28920433, a: 0}
+            - {r: 0.6320754, g: 0.28920433, b: 0.28920433, a: 0}
+            - {r: 0.6320754, g: 0.28920433, b: 0.28920433, a: 0}
+            - {r: 0.6320754, g: 0.28920433, b: 0.28920433, a: 0}
+            - {r: 0.4528302, g: 0.43513495, b: 0.31399074, a: 0}
+            tintStrenghtArray:
+            - 0
+            - 0
+            - 0
+            - 0
+            - 0
+            - 0
+            - 0
+            - 0
+            - 0
+            startHeightArray:
+            - 0
+            - 0.1
+            - 0
+            - 0.485
+            - 0
+            - 1
+            - 0
+            - 1
+            blendStrengthArray:
+            - 0
+            - 0.1
+            - 0
+            - 0.03
+            - 0
+            - 0
+            - 0
+            - 0
+            - 1
+            textureScaleArray:
+            - 10
+            - 10
+            - 10
+            - 10
+            - 10
+            - 10
+            - 10
+            - 10
+            - 10
+    - Name: Temperature 1
+      strenght: 1
+      humidity:
+      - Name: "\u0412\u043B\u0430\u0436\u043D\u043E\u0441\u0442\u044C 1"
+        strenght: 1
+        urbanization:
+        - Name: "\u0423\u0440\u0431\u0430\u043D\u0438\u0437\u0430\u0446\u0438\u044F
+            1"
+          strenght: 1
+          landmassNoiseSettings:
+            scale: 40
+            octaves: 1
+            persistance: 0.6
+            lacunarity: 2
+            seed: 0
+            offset: {x: 0, y: 0}
+            octaveOffsets:
+            - {x: 45248, y: 63465}
+            maxPossibleHeight: 1
+          heightMultiplier: 25
+          heightCurve:
+            serializedVersion: 2
+            m_Curve:
+            - serializedVersion: 3
+              time: 0
+              value: 0
+              inSlope: 1
+              outSlope: 1
+              tangentMode: 34
+              weightedMode: 0
+              inWeight: 0
+              outWeight: 0
+            - serializedVersion: 3
+              time: 1
+              value: 1
+              inSlope: 1
+              outSlope: 1
+              tangentMode: 34
+              weightedMode: 0
+              inWeight: 0
+              outWeight: 0
+            m_PreInfinity: 2
+            m_PostInfinity: 2
+            m_RotationOrder: 4
+          material: {fileID: 2100000, guid: 07757066d744ac24b8f10684ecbe9b5f, type: 2}
+          layers:
+          - texture: {fileID: 2800000, guid: 8f55b25e9ee003b4089a3d48167a21d3, type: 3}
+            tint: {r: 0.8627451, g: 0.78431374, b: 0.23529412, a: 0}
+            tintStrenght: 0
+            startHeight: 0
+            blendStrength: 0
+            textureScale: 10
+          - texture: {fileID: 2800000, guid: 8f861f17d26839b4f9fb847899212786, type: 3}
+            tint: {r: 0.29411766, g: 0.7058824, b: 0.11764706, a: 0}
+            tintStrenght: 0
+            startHeight: 0.01
+            blendStrength: 0.2
+            textureScale: 10
+          biomlayers:
+          - texture: {fileID: 2800000, guid: 944e18ec8c6d71e479f24b32ce582446, type: 3}
+            tint: {r: 0.6415094, g: 0.5598077, b: 0.5598077, a: 0}
+            tintStrenght: 0
+            startHeight: 0.515
+            blendStrength: 0.03
+            textureScale: 10
+          - texture: {fileID: 2800000, guid: 8f55b25e9ee003b4089a3d48167a21d3, type: 3}
+            tint: {r: 0.6320754, g: 0.28920433, b: 0.28920433, a: 0}
+            tintStrenght: 0
+            startHeight: 1
+            blendStrength: 0
+            textureScale: 10
+          - texture: {fileID: 2800000, guid: e6bf1dc5489774149aec55e7d67dd30b, type: 3}
+            tint: {r: 0.6320754, g: 0.28920433, b: 0.28920433, a: 0}
+            tintStrenght: 0
+            startHeight: 0
+            blendStrength: 0
+            textureScale: 10
+          - texture: {fileID: 2800000, guid: e6bf1dc5489774149aec55e7d67dd30b, type: 3}
+            tint: {r: 0.6320754, g: 0.28920433, b: 0.28920433, a: 0}
+            tintStrenght: 0
+            startHeight: 1
+            blendStrength: 0
+            textureScale: 10
+          - texture: {fileID: 2800000, guid: e6bf1dc5489774149aec55e7d67dd30b, type: 3}
+            tint: {r: 0.6320754, g: 0.28920433, b: 0.28920433, a: 0}
+            tintStrenght: 0
+            startHeight: 0
+            blendStrength: 0
+            textureScale: 10
+          - texture: {fileID: 2800000, guid: e6bf1dc5489774149aec55e7d67dd30b, type: 3}
+            tint: {r: 0.6320754, g: 0.28920433, b: 0.28920433, a: 0}
+            tintStrenght: 0
+            startHeight: 1
+            blendStrength: 0
+            textureScale: 10
+          hasMountains: 1
+          mountainsNoiseSettings:
+            scale: 400
+            octaves: 2
+            persistance: 0.6
+            lacunarity: 3
+            seed: 0
+            offset: {x: 0, y: 0}
+            octaveOffsets:
+            - {x: 45248, y: 63465}
+            - {x: 53604, y: 11632}
+            maxPossibleHeight: 1.6
+          mountainMultiplier: 700
+          mountainCurve:
+            serializedVersion: 2
+            m_Curve:
+            - serializedVersion: 3
+              time: 0
+              value: 0
+              inSlope: 0
+              outSlope: 0
+              tangentMode: 0
+              weightedMode: 0
+              inWeight: 0
+              outWeight: 0
+            - serializedVersion: 3
+              time: 1
+              value: 1
+              inSlope: 2
+              outSlope: 2
+              tangentMode: 0
+              weightedMode: 0
+              inWeight: 0
+              outWeight: 0
+            m_PreInfinity: 2
+            m_PostInfinity: 2
+            m_RotationOrder: 4
+          mountainThreshold: 0.4
+          biomeScalingImmunity: 1
+          mountainMaterial: {fileID: 0}
+          mountainLayers: []
+          hasLakes: 0
+          lakesNoiseSettings:
+            scale: 50
+            octaves: 6
+            persistance: 0.6
+            lacunarity: 2
+            seed: 0
+            offset: {x: 0, y: 0}
+            octaveOffsets:
+            - {x: 45248, y: 63465}
+            - {x: 53604, y: 11632}
+            - {x: -58794, y: 11776}
+            - {x: 81205, y: -11565}
+            - {x: 95509, y: -45260}
+            - {x: -41619, y: -6538}
+            maxPossibleHeight: 2.3833601
+          lakeMultiplier: 50
+          lakeThreshold: 0.4
+          temperatureStart: 0.5
+          temperatureInterval: 0.5
+          humidityStart: 0
+          humidityInterval: 1
+          urbanizationStart: 0
+          urbanizationInterval: 1
+          shaderProperties:
+            colorArray:
+            - {r: 0.8627451, g: 0.78431374, b: 0.23529412, a: 0}
+            - {r: 0.29411766, g: 0.7058824, b: 0.11764706, a: 0}
+            - {r: 0.6415094, g: 0.5598077, b: 0.5598077, a: 0}
+            - {r: 0.6320754, g: 0.28920433, b: 0.28920433, a: 0}
+            - {r: 0.6320754, g: 0.28920433, b: 0.28920433, a: 0}
+            - {r: 0.6320754, g: 0.28920433, b: 0.28920433, a: 0}
+            - {r: 0.6320754, g: 0.28920433, b: 0.28920433, a: 0}
+            - {r: 0.6320754, g: 0.28920433, b: 0.28920433, a: 0}
+            - {r: 0.4528302, g: 0.43513495, b: 0.31399074, a: 0}
+            tintStrenghtArray:
+            - 0
+            - 0
+            - 0
+            - 0
+            - 0
+            - 0
+            - 0
+            - 0
+            - 0
+            startHeightArray:
+            - 0
+            - 0.01
+            - 0.515
+            - 1
+            - 0
+            - 1
+            - 0
+            - 1
+            blendStrengthArray:
+            - 0
+            - 0.2
+            - 0.03
+            - 0
+            - 0
+            - 0
+            - 0
+            - 0
+            - 1
+            textureScaleArray:
+            - 10
+            - 10
+            - 10
+            - 10
+            - 10
+            - 10
+            - 10
+            - 10
+            - 10
